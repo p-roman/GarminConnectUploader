@@ -1,7 +1,11 @@
 GarminConnectUploader
 =====================
 
-Uploads .tcx, .fit, and .gpx files (which have already been extracted from your Garmin device) to the Garmin Connect site.
+Uploads .tcx, .fit, and .gpx files (which have already been extracted from your Garmin device) to the Garmin Connect site. GarminConnectUploader supports the following upload methods:  
+* Upload one file and set activity name
+* Upload multiple files (file names specified as arguments)
+* Upload all activity files in a directory (specified as an argument)
+* Upload all activity files in a directory (specified in config file)
 
 This is a slightly modified version of David Lotton's uploader, which can be found here:
 http://sourceforge.net/projects/gcpuploader/
@@ -37,7 +41,7 @@ Help
   -v {1,2,3,4,5} Verbose - select level of verbosity. 1=DEBUG(most verbose),2=INFO, 3=WARNING, 4=ERROR, 5=CRITICAL(least verbose). [default=3]
 
 *Config file*  
-Username and password credentials may be placed in a configuration file located either in the current working directory (directory you are in when you execute gupload.py), or in the user's home directory. In Linux, the home directory is usually something like '/home/\<username\>', while in Windows it is C:\Documents and Settings\\\<username\>\'.WARNING, THIS IS NOT SECURE. USE THIS OPTION AT YOUR OWN RISK. Username and password are stored as clear text in a file format that is consistent with Microsoft (r) INI files.
+Username and password credentials may be placed in a configuration file located either in the current working directory (directory you are in when you execute gupload.py), or in the user's home directory. In Linux, the home directory is usually something like '/home/\<username\>', while in Windows it is C:\Documents and Settings\\\<username\>\'. WARNING, THIS IS NOT SECURE. USE THIS OPTION AT YOUR OWN RISK. Username and password are stored as clear text in a file format that is consistent with Microsoft (r) INI files.
 
 The configuration file must contain a [Credentials] section containing 'username' and 'password' entries. A [DefaultGarminDataDir] section containing a 'defaultDir' entry is optional.
 
