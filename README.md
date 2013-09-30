@@ -1,7 +1,7 @@
 GarminConnectUploader
 =====================
 
-Uploads .tcx, .fit, and .gpx files to Garmin Connect site.
+Uploads .tcx, .fit, and .gpx files (which have already been extracted from your Garmin device) to the Garmin Connect site.
 
 This is a slightly modified version of David Lotton's uploader, which can be found here:
 http://sourceforge.net/projects/gcpuploader/
