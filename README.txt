@@ -1,9 +1,6 @@
-Garmin Connect Python Uploader (gupload.py) uploads files 
-(.tcx, .gpx, and .fit files ) created by Garmin fitness 
-devices to the http://connect.garmin.com web site.
+Garmin Connect Uploader (gupload.py) uploads files (.tcx, .gpx, and .fit files ) created by Garmin fitness devices to the http://connect.garmin.com web site.
 
-This is a slightly modified version of David Lotton's uploader, which
-can be found here: http://sourceforge.net/projects/gcpuploader/ 
+This is a slightly modified version of David Lotton's uploader, which can be found here: http://sourceforge.net/projects/gcpuploader/ 
 
 INSTALL:
 
@@ -16,8 +13,7 @@ sudo ln -s  /opt/pygupload/gupload.py /usr/local/bin/gupload.py
 Windows:
 Add <path_to_repository> to your PATH environment variable.
 
-If you want to run without specifying credentials or garmin file directory everytime,
-then create a config file, as specified below.
+If you want to run without specifying credentials or garmin file directory everytime, then create a config file, as specified below.
 
 
 HELP:
@@ -39,18 +35,14 @@ optional arguments:
                   2=INFO, 3=WARNING, 4=ERROR, 5= CRITICAL(least verbose).
                   [default=3]
 
-Username and password credentials may be placed in a configuration file
-located either in the current working directory, or in the user's home
-directory.  WARNING, THIS IS NOT SECURE. USE THIS OPTION AT YOUR OWN
-RISK.  Username and password are stored as clear text in a file
+Username and password credentials may be placed in a configuration file located either in the current working directory, or in the user's home
+directory.  WARNING, THIS IS NOT SECURE. USE THIS OPTION AT YOUR OWN RISK.  Username and password are stored as clear text in a file
 format that is consistent with Microsoft (r) INI files.                       
 
-The configuration file must contain a [Credentials] section containing 
-'username' and 'password' entries. A [DefaultGarminDataDir] section 
+The configuration file must contain a [Credentials] section containing 'username' and 'password' entries. A [DefaultGarminDataDir] section 
 containing a 'defaultDir' entry is optional.
 
-The name of the config file for non-windows platforms is '.guploadrc'
-(gupload.ini for Windows users).
+The name of the config file for non-windows platforms is '.guploadrc' (gupload.ini for Windows users).
 
 Example '.guploadrc' (or 'gupload.ini' for windows):
 [Credentials]
@@ -59,15 +51,12 @@ password=<mypassword>
 [DefaultGarminDataDir]
 defaultDir=<full_path_to_dir>\*
 
-Replace <myusername> and <mypassword> above with your own login 
-credentials. If you don't want to keep typing in your garmin file directory,
-add the last 2 OPTIONAL lines to the config file, replacing <full_path_to_dir>
-with the full path to the directory containing the Garmin files you would like
+Replace <myusername> and <mypassword> above with your own login credentials. If you don't want to keep typing in your garmin file directory,
+add the last 2 OPTIONAL lines to the config file, replacing <full_path_to_dir> with the full path to the directory containing the Garmin files you would like
 to upload.
 
 Priority of credentials:
-Command line credentials take priority over config files, current 
-directory config file takes priority over a config file in the user's
+Command line credentials take priority over config files, current directory config file takes priority over a config file in the user's
 home directory.
 
 
